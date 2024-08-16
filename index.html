@@ -20,17 +20,36 @@
           <span id="nav-text">Sunshine Gym</span>
 
           <div id="pages-text-container"><a href=""><span class="pages-text">Home</span></a> <a href=""><span class="pages-text">Service</span></a> <a href=""><span class="pages-text">Contact</span></a> <a href=""><span class="pages-text">About</span></a></div>
+          <img src="images/more.png" alt="more" id="nav-more">
         </nav>
     </section>
     <section>
-      <div id="landing-page-holder"><div class="landing-page-half"><div id="landing-page-text">Get your body in <span id="text-shape">shape</span> & stay <span id="text-healthy">healthy</span></div>
-    <button id="landing-page-button">Join our club!</button></div><div class="landing-page-half center-flex" id="flex"><img src="images/Images 2.png" alt="strong guy" id="landing-page-image">
+      <div id="landing-page-holder" class="hero"><div class="landing-page-half hero-half"><div id="landing-page-text">Get your body in <span id="text-shape">shape</span> & stay <span id="text-healthy">healthy</span></div>
+    <button id="landing-page-button">Join our club!</button></div><div class="landing-page-half hero-half center-flex" id="flex"><img src="images/Images 2.png" alt="strong guy" id="landing-page-image">
     <div id="landing-card-1">Upto 200 videos</div>
     <div id="landing-card-2">Personal Trainers</div></div>
     </section>
+    <hr>
+    <section>
+      <div id="landing-page-holder"
+      style="height: 100% !important;">
+      <div class="title">Locate a gym</div>
+      <div class="sub-title">Fill up the form to locate gyms near you!</div>
+      <div><form style="display: flex; flex-direction: column; margin: 0 20px;">
+        <input type="text" placeholder="ZIP Code">
+        <select name="distance" id="distance">
+          <option value="5miles">5 miles</option>
+          <option value="10miles">10 miles</option>
+          <option value="15miles">15 miles</option>
+          <option value="20miles">20 miles</option>
+        </select>
+        <button style="padding: 10px; background-color: grey; border: none; cursor: pointer; color: white; font-family: sans-serif; font-weight: bolder; border-radius: 10px;">Locate</button>
+      </form></div>
+      </div>
+    </section>
     <hr style="margin: 50px 0px; color: black;">
     <section>
-      <div id="landing-page-holder" style="display: inline-flex; align-items: center; justify-content: center; flex-direction: column;"><div class="title">Change your habits</div><div class="sub-title">Change your habits by joining our club!</div>
+      <div id="landing-page-holder"  class="change-card" style="display: inline-flex; align-items: center; justify-content: center; flex-direction: column;"><div class="title">Change your habits</div><div class="sub-title">Change your habits by joining our club!</div>
       <div class="card-container"><div class="card-item"><img src="images/image 2.png" alt="image 2"><div>We believe that movement is one of the key points to discipline</div></div><div class="card-item"><img src="images/image 3.png" alt="image 2"><div>We believe that timing is one of the key points to discipline</div></div><div class="card-item"><img src="images/image 4.png" alt="image 2"><div>We believe that practice is one of the key points to discipline</div></div><div class="card-item"><img src="images/image 5.png" alt="image 2"><div>We believe that weight loss is one of the key points to discipline</div></div></div>
     </div>
     </section>
@@ -54,7 +73,87 @@
       <div id="landing-page-holder" style="display: inline-flex; align-items: center; justify-content: center; flex-direction: column;">
       <div class="title">BMI Calculator</div>
       <div class="sub-title">Calculate your <span style="color: antiquewhite;">Body Mass Index</span></div>
+      <div id="bmi-container">
+        <div id="bmi-chart"><h3>BMI Calculator Chart</h3>
+        <table>
+          <tr>
+            <th>BMI</th>
+            <th>Weight Status</th>
+          </tr>
+          <tr>
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5 - 24.9</td>
+            <td>Healthy</td>
+          </tr>
+          <tr>
+            <td>25.0 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30.0 - and Above</td>
+            <td>Obese</td>
+          </tr>
+        </table></div>
+        <div id="bmi-form">
+          <div id="form-title">Calculate your BMI</div>
+          <div id="form-sub-title">Fill up this form to calculate your BMI</div>
+          <div>
+          <form>
+            <input type="text" placeholder="Height/cm" min="0">
+            <input type="number" placeholder="Weight/kg" min="0">
+            <input type="number" placeholder="Age" min="0">
+            <select name="Gender" id="gender">
+              <option value="none">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <select id="grid-2x" name="Select an activity factor" id="activity-factor">
+              <option value="none">Select an activity factor</option>
+              <option value="sedentary-behavior">Sedentary Behavior</option>
+              <option value="exercise-intensity">Exercise Intensity</option>
+              <option value="leisure-time">Leisure-Time Physical Activity</option>
+            </select>
+          </form>
+          <button id="calculate-button">Calculate</button>
+        </div>
+        </div>
+      </div>
       </div>
     </section>
+    <hr>
+    <section>
+      <div id="landing-page-holder" style="display: inline-flex; align-items: center; justify-content: center; flex-direction: column;">
+        <div class="title">Our Team</div>
+        <div class="sub-title">Meet our team of professional trainers!</div>
+        <div id="img-container-decor"><div id="img-decor-7">David</div><div id="img-decor-8">John</div><div id="img-decor-9">Wick</div><div id="img-decor-10">Alan</div><div id="img-decor-11">Mohammed</div><div id="img-decor-12">William</div></div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer-div">
+        <div id="footer-about">
+          <h1>Sunshine Gym</h1>
+          <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+        </div>
+        <div id="footer-get-started">
+          <h2>Get Started</h2>
+          <a href=""><div>Service</div></a>
+          <a href=""><div>Contact Us</div></a>
+          <a href=""><div>Affiliate Program</div></a>
+          <a href=""><div>About Us</div></a>
+        </div>
+        <div id="footer-get-started">
+          <h2>Get Started</h2>
+          <a href=""><div>Fitness</div></a>
+          <a href=""><div>Platform</div></a>
+          <a href=""><div>Workout Library</div></a>
+          <a href=""><div>App Design</div></a>
+        </div>
+      </div>
+      <hr style="margin: 10px 0;">
+      <div id="copyright">All rights reserved @Sunshine Gym 2024</div>
+    </footer>
   </body>
 </html>
